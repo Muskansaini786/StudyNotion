@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 import { fetchInstructorCourses } from "../../../services/operations/courseDetailsAPI"
 import { getInstructorData } from "../../../services/operations/profileAPI"
-import InstructorChart from "./InstructorDashboard/InstructorChart"
+import InstructorChart from './InstructorChart';
 
 export default function Instructor() {
   const { token } = useSelector((state) => state.auth)
