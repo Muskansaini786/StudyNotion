@@ -116,7 +116,8 @@ const About = () => {
         </h1>
         {/* <ReviewSlider /> */}
         <ReviewSlider />
-      </div>
+      </div> 
+
       {/* <Footer /> */}
       <Footer />
     </div>
