@@ -37,11 +37,11 @@ async function sendVerificationEmail(email, otp) {
 	}
 }
 
-// Define a post-save hook to send email after the document has been saved
+// Define a pre-save hook to send email before the document has been saved
 OTPSchema.pre("save", async function (next) {
 	console.log("New document saved to database");
 
-	// Only send an email when a new document is created
+	// Only send an email when  document is new
 	if (this.isNew) {
 		await sendVerificationEmail(this.email, this.otp);
 	}
