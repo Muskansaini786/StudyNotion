@@ -6,7 +6,9 @@ const categorySchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	description: { type: String },
+	description: {
+		type: String
+	},
 	courses: [
 		{
 			type: mongoose.Schema.Types.ObjectId,
@@ -15,5 +17,5 @@ const categorySchema = new mongoose.Schema({
 	],
 });
 
-// Export the Tags model
+// Export the category model
 module.exports = mongoose.model("Category", categorySchema);

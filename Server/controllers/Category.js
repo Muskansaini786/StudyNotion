@@ -1,8 +1,8 @@
 const { Mongoose } = require("mongoose");
 const Category = require("../models/Category");
 function getRandomInt(max) {
-    return Math.floor(Math.random() * max)
-  }
+  return Math.floor(Math.random() * max)
+}
 
 exports.createCategory = async (req, res) => {
 	try {
